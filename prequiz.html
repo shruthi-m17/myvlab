@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="" width=device-width, initial-scale="1.0">
+
+    <!-- to display title in search bar -->
+    <title>Vlab_Rectifier_circuits</title>
+
+    <!-- materials icon like 3 line =_,close X -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+    <!-- montserrat  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- to link css to this html file -->
+    <link rel="stylesheet" href="./mycss.css"/>
+
+</head>
+
+<body>
+    <nav>
+        <div class="TCElogobox">
+            <!-- <img src="./images/Thiagarajar_College_of_Engineering_logo.png" width="40" height="40" />        -->
+        </div>
+        <div class="collegename">
+            <!-- <h4>Thiagarajar College of Engineering and Technology</h4> -->
+        </div>
+        <div class="eeevlab">
+            <h4>EEE Virtual Lab</h4>
+        </div>
+    </nav>
+
+    <div class="study">Study of Rectifier Circuits</div>
+    <div class="switchbutton">
+        <ul>
+            <button class="mybtn1"><a href="./home.html">Home</a></button>
+            <button class="mybtn1"><a href="./aim.html">Aim</a></button>
+            <button class="mybtn2"><a href="./theory.html">Theory</a></button>
+            <button class="mybtn4"><a href="./simulation.html">Simulation</a></button>
+            <button class="mybtn5"><a href="./post-quiz.html">Post-Quiz</a></button>
+            <button class="mybtn6"><a href="./feedback.html">Feedback</a></button>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- pre-quiz part -->
+    <h1 id="pre-quiz">Pre-Quiz:</h1>
+
+    <h2>Click the "Start Button" to start the quiz</h2>
+       
+        <!-- start Quiz button -->
+        <div class="start_btn"><button>Start Quiz</button></div>
+        <!-- Info Box-->
+        <div class="info_box">
+            <div class="info-title"><span></span></div>
+            <div class="info-list">
+                <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                <div class="info">2.The questions are based on concepts of rectification.</div>
+                <div class="info">3. Once you select an answer it can't be undone and try to finish each question within 15
+                    seconds.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title">Pre-Quiz</div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- Here I've inserted question from JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- Here I've inserted options from JavaScript -->
+                </div>
+            </section>
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Next Question</button>
+            </footer>
+        </div>
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">Now you are clear with the basics of half-wave and full-wave rectifier circuits.
+                Get ready for the simulation !!!</div>
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+    
+        <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+        <script src="./js/pre_quiz_questions.js"></script>
+    
+        <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+        <script src="./js/script.js"></script>
+    
+    
+
+
+</body>
+</html>

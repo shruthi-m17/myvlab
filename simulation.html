@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="" width=device-width, initial-scale="1.0">
+
+    <!-- to display title in search bar -->
+    <title>Vlab_Rectifier_circuits</title>
+
+    <!-- materials icon like 3 line =_,close X -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+    <!-- montserrat  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- to link css to this html file -->
+    <link rel="stylesheet" href="./mycss.css" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="TCElogobox">
+            <!-- <img src="./images/Thiagarajar_College_of_Engineering_logo.png" width="40" height="40" />        -->
+        </div>
+        <div class="collegename">
+            <!-- <h4>Thiagarajar College of Engineering and Technology</h4> -->
+        </div>
+        <div class="eeevlab">
+            <h4>EEE Virtual Lab</h4>
+        </div>
+    </nav>
+
+    <div class="study">Study of Rectifier Circuits</div>
+    <div class="switchbutton">
+        <ul>
+            <button class="mybtn1"><a href="./home.html">Home</a></button>
+            <button class="mybtn1"><a href="./aim.html">Aim</a></button>
+            <button class="mybtn2"><a href="./theory.html">Theory</a></button>
+            <button class="mybtn3"><a href="./prequiz.html">Pre-Quiz</a></button>
+            <button class="mybtn5"><a href="./post-quiz.html">Post-Quiz</a></button>
+            <button class="mybtn6"><a href="./feedback.html">Feedback</a></button>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- simulation part -->
+    
+    
+    <h1 id="simulation">Simulation:</h1>
+    <ul>
+        <li>
+            <h2>Instructions:</h2>
+            <ol>
+                <h3>
+                    <li>Using Radio buttons available , select either amplitude 1 or amplitude 2.</li>
+                    <li>After selecting the amplitude observe the circuit diagram given.</li>
+                    <li>Then click the input button to observe the input wave form given to the circuit.</li>
+                    <li>Then click the output button to observe the output wave form.</li>
+                    <li>Click on dual button to observe both input and ouput waveforms together.</li>
+                </h3>
+            </ol>
+        </li>
+        <li>
+            <h2>Half Wave Rectifier:</h2>
+        </li>
+    
+        <!-- half wave rectifier , amplitude 1-->
+        <h3><input type="radio" name="half_wave" id="halfwave_amplitude_1" value="Amplitude = 1">Amplitude = 1</h3>
+        <br>
+        <img src="./images/half wave rectifier/amplitude1/circuit.png" />
+        <br>
+        <br>
+    
+    
+    
+        <!-- half wave rectifier , amplitude 1 , input image -->
+        <img id="halfwave_amplitude_1_input" src="./images/half wave rectifier/amplitude1/input.png" width="300"
+            height="300" />
+        <button type="button" onclick="show1()" id="btn_halfwave_amplitude_1_input">Input</button>
+        <!-- half wave rectifier , amplitude 1 , ouput image-->
+        <img id="halfwave_amplitude_1_output" src="./images/half wave rectifier/amplitude1/output.png" width="300"
+            height="300" />
+        <button type="button" onclick="show2()" id="btn_halfwave_amplitude_1_output">Output</button>
+        <!-- half wave rectifier , amplitude 1 , dual image-->
+        <img id="halfwave_amplitude_1_dual" src="./images/half wave rectifier/amplitude1/dual.png" width="300"
+            height="300" />
+        <button type="button" onclick="show3()" id="btn_halfwave_amplitude_1_dual">Dual</button>
+        <br>
+        <br>
+    
+    
+    
+        <!-- half wave rectifier , amplitude 2-->
+        <h3><input type="radio" name="half_wave" id="halfwave_amplitude_2" value="Amplitude = 2">Amplitude = 2</h3>
+        <br>
+        <img src="./images/half wave rectifier/amplitude2/circuit.png" />
+        <br>
+        <br>
+    
+    
+        <!-- half wave rectifier , amplitude 2, input image -->
+        <img id="halfwave_amplitude_2_input" src="./images/half wave rectifier/amplitude2/inputwave.png" width="300"
+            height="300" />
+        <button type="button" onclick="show4()" id="btn_halfwave_amplitude_2_input">Input</button>
+        <!-- half wave rectifier , amplitude 2 , ouput image-->
+        <img id="halfwave_amplitude_2_output" src="./images/half wave rectifier/amplitude2/outputwave.png" width="300"
+            height="300" />
+        <button type="button" onclick="show5()" id="btn_halfwave_amplitude_2_output">Output</button>
+        <!-- half wave rectifier , amplitude 2, dual image-->
+        <img id="halfwave_amplitude_2_dual" src="./images/half wave rectifier/amplitude2/inputandoutput.png" width="300"
+            height="300" />
+        <button type="button" onclick="show6()" id="btn_halfwave_amplitude_2_dual">Dual</button>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+    
+    
+        <li>
+            <h2>Full Wave Rectifier:</h2>
+        </li>
+    
+        <!-- full wave rectifier, amplitude 1 -->
+        <h3><input type="radio" name="full_wave" id="fullwave_amplitude_1" value="Amplitude = 1">Amplitude = 1</h3>
+        <br>
+        <img src="./images/full wave rectifier/amplitude1/circuit.png" height="300" width="500" />
+        <br>
+        <br>
+    
+    
+    
+        <!-- full wave rectifier , amplitude 1 , input image -->
+        <img id="fullwave_amplitude_1_input" src="./images/full wave rectifier/amplitude1/input.png" width="300"
+            height="300" />
+        <button type="button" onclick="show7()" id="btn_fullwave_amplitude_1_input">Input</button>
+        <!-- full wave rectifier , amplitude 1 , ouput image-->
+        <img id="fullwave_amplitude_1_output" src="./images/full wave rectifier/amplitude1/output.png" width="300"
+            height="300" />
+        <button type="button" onclick="show8()" id="btn_fullwave_amplitude_1_output">Output</button>
+        <!-- full wave rectifier , amplitude 1 , dual image-->
+        <img id="fullwave_amplitude_1_dual" src="./images/full wave rectifier/amplitude1/dual.png" width="300"
+            height="300" />
+        <button type="button" onclick="show9()" id="btn_fullwave_amplitude_1_dual">Dual</button>
+        <br>
+        <br>
+    
+    
+    
+    
+    
+        <h3><input type="radio" name="full_wave" id="fullwave_amplitude_2" value="Amplitude = 2">Amplitude = 2</h3>
+        <br>
+        <img src="./images/full wave rectifier/amplitude2/circuit.png" height="300" width="500" />
+        <br>
+        <br>
+    
+    
+        <!-- full wave rectifier , amplitude 2, input image -->
+        <img id="fullwave_amplitude_2_input" src="./images/full wave rectifier/amplitude2/input.png" width="300"
+            height="300" />
+        <button type="button" onclick="show10()" id="btn_fullwave_amplitude_2_input">Input</button>
+        <!-- full wave rectifier , amplitude 2 , ouput image-->
+        <img id="fullwave_amplitude_2_output" src="./images/full wave rectifier/amplitude2/output.png" width="300"
+            height="300" />
+        <button type="button" onclick="show11()" id="btn_fullwave_amplitude_2_output">Output</button>
+        <!-- full wave rectifier , amplitude 2, dual image-->
+        <img id="fullwave_amplitude_2_dual" src="./images/full wave rectifier/amplitude2/dual.png" width="300"
+            height="300" />
+        <button type="button" onclick="show12()" id="btn_fullwave_amplitude_2_dual">Dual</button>
+        <br>
+        <br>
+    
+    
+        <!-- adding java script file called simulation functions  -->
+        <script src="./js/simulation_functions.js"></script>
+    
+    </ul>
+    <br>
+    <br>
+    <br>
+
+
+    </body>    
+    </html>

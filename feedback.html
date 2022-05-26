@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="" width=device-width, initial-scale="1.0">
+
+    <!-- to display title in search bar -->
+    <title>Vlab_Rectifier_circuits</title>
+
+    <!-- materials icon like 3 line =_,close X -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+    <!-- montserrat  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- to link css to this html file -->
+    <link rel="stylesheet" href="./mycss.css" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="TCElogobox">
+            <!-- <img src="./images/Thiagarajar_College_of_Engineering_logo.png" width="40" height="40" />        -->
+        </div>
+        <div class="collegename">
+            <!-- <h4>Thiagarajar College of Engineering and Technology</h4> -->
+        </div>
+        <div class="eeevlab">
+            <h4>EEE Virtual Lab</h4>
+        </div>
+    </nav>
+
+    <div class="study">Study of Rectifier Circuits</div>
+    <div class="switchbutton">
+        <ul>
+            <button class="mybtn1"><a href="./home.html">Home</a></button>
+            <button class="mybtn1"><a href="./aim.html">Aim</a></button>
+            <button class="mybtn2"><a href="./theory.html">Theory</a></button>
+            <button class="mybtn3"><a href="./prequiz.html">Pre-Quiz</a></button>
+            <button class="mybtn4"><a href="./simulation.html">Simulation</a></button>
+            <button class="mybtn5"><a href="./post-quiz.html">Post-Quiz</a></button>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1 id="feedback">Feedback:</h1>
+    <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false; ">
+            <h3>Get in Touch</h3>
+            <input type="text" id="names" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Id" required>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+            <textarea id="message" rows="10" placeholder="Your valuable comments please..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script src="./js/feedback.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>
